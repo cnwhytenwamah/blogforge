@@ -186,6 +186,8 @@ blogforge/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   ├── hooks/
+│   │   ├── App.css
+│   │   ├── index.css
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   │
