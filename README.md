@@ -151,26 +151,50 @@ This helps make API operations clear to the user instead of silently failing.
 BlogForge is organized as a full-stack application with separate frontend and backend applications.
 
 ```text
-BlogForge/
+blogforge/
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── database.js
+│   │   │
+│   │   ├── controllers/
+│   │   │   └── postController.js
+│   │   │
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   ├── Post.js
+│   │   │   └── index.js
+│   │   │
+│   │   ├── routes/
+│   │   │   └── postRoutes.js
+│   │   │
+│   │   ├── middleware/
+│   │   │   └── errorHandler.js
+│   │   │
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   ├── .env
+│   ├── .env.example
+│   ├── .gitignore
+│   └── package.json
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── services/
-│   │   ├── ...
+│   │   ├── hooks/
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │   │
-│   ├── package.json
-│   └── ...
+│   ├── .env
+│   ├── .env.example
+│   └── package.json
 │
-├── backend/
-│   ├── src/
-│   │   ├── ...
-│   │
-│   ├── package.json
-│   └── ...
-│
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 The frontend communicates with the backend through HTTP requests using Axios.
